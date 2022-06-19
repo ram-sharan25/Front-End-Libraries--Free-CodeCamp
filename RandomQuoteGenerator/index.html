@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+   
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>
+        Random Quote Generator
+    </title>
+</head>
+<html>
+    <body >
+        <div class="container element" id="quote-box">
+            <div id="text" class="fa fa-solid fa-quote-left quote-text">
+            </div>
+            <div id="author" class="quote-author">
+            </div>
+            <div id="new-quote">
+                <button type="button" class="btn btn-primary" onclick="newQuote()">
+                    New Quote
+                </button>
+            </div>
+            <div class="row">
+            <div class ="col-sm-1" >
+                <button  ><a  href="https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=" id="tweet-quote"></a><i class="fa fa-twitter"></i></a></button>
+            </div>
+            <div class ="col-sm-1" id="tumblr-quote">
+                <button  ><a  href="tumbler.com"></a><i class="fa fa-tumblr"></i></a></button>
+            </div>
+             </div>
+           
+        </div>
+    </body>
+    <script src ="logic.js"></script><!-- this script needs to be at the end 
+    because this will load JS after loading the HTML so that JS can be operated over the HTML-->
+   
+    <script src="https://kit.fontawesome.com/7e46b71bb5.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+</html>
