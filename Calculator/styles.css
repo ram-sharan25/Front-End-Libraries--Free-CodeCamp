@@ -1,0 +1,49 @@
+html{
+    background-color: rgb(148, 90, 201);
+}
+
+.container{
+    padding: 5px;
+    margin: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: azure;
+    border-radius: 5%;
+
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "dis dis dis dis"
+    "AC AC C divide"
+    "seven eight nine product"
+    "four five six minus"
+    "one two three equals"
+    "decimal zero add equals";
+
+}
+.padButton{
+    display: flex;
+    background-color: rgb(85, 85, 124);
+    padding: 17px 30px;
+    margin: 3px;
+    border: 1px solid rgb(102, 2, 52);
+   
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.AC{
+    grid-area: AC;
+
+}
+.dis{
+    grid-area: dis;
+}
+
+.equals{
+    grid-area: equals;
+}
