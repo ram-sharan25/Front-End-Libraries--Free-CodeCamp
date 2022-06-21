@@ -1,5 +1,5 @@
 html{
-    background-color: rgb(148, 90, 201);
+    background-color: rgb(161, 144, 177);
 }
 
 .container{
@@ -8,42 +8,81 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: azure;
-    border-radius: 5%;
+    border: 4px solid black;
+    border-radius: 2%;
+    width: fit-content;
 
 }
 .grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
     "dis dis dis dis"
-    "AC AC C divide"
+    "total total total total"
+    "AC AC POW divide"
     "seven eight nine product"
     "four five six minus"
-    "one two three equals"
-    "decimal zero add equals";
+    "one two three add"
+    "decimal zero equals equals";
 
 }
 .padButton{
     display: flex;
     background-color: rgb(85, 85, 124);
-    padding: 17px 30px;
+    padding: 15px 30px;
     margin: 3px;
     border: 1px solid rgb(102, 2, 52);
-   
+    color: white;
     justify-content: center;
     align-items: center;
     cursor: pointer;
 }
+.padButton:hover{
+    border: 2px solid yellow;
+}
 .AC{
     grid-area: AC;
+    background-color: rgb(243, 65, 11);
 
 }
 .dis{
     grid-area: dis;
 }
+.total{
+    grid-area: total;   
+}
 
 .equals{
     grid-area: equals;
+    
+}
+.math{
+    background-color: rgb(170, 142, 108);
+}
+.number{
+    background-color: rgb(42, 40, 38);
+}
+.input{
+    width: 90%;
+    background-color: rgb(85, 85, 124);
+    padding: 15px;
+    text-align: right;
+    color: white;
+   font-family:'Courier New', Courier, monospace;
+   font-size: 1.5em;
+   border: 3px 3px 3px 0px solid rgb(76, 64, 88);
+  
+    
+}
+.total{
+    width: 90%;
+    background-color: rgb(85, 85, 124);
+    text-align: right;
+    color: white;
+   font-family:monospace;
+   justify-content: center;
+   padding: 14px;
+   font-size: 1.5em;
+   border: 3px solid rgb(76, 64, 88);
 }
