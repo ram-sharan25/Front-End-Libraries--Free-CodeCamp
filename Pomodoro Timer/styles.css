@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(185, 157, 157);
+}
+
+
+.timer{
+    color: white;
+    font-size: 3em;
+}
+.dual-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 900 px;
+   
+   
+}
+.heading{
+    text-align: center;
+}
+
+.time-sets{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding:20px;
+    color: white;
+    
+}
+.control-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    padding: 5px;
+    margin:5px;
+}
+
